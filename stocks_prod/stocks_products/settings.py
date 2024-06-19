@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBOG')
+DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
 
@@ -89,8 +89,8 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME'),
         'HOST': os.getenv('DB_HOST'),
         'PORT': os.getenv('DB_PORT'),
-	'USER': os.getenv('DB_USER'),
-	'PASSWORD': os.getenv('DB_PASSWORD')
+	    'USER': os.getenv('DB_USER'),
+	    'PASSWORD': os.getenv('DB_PASSWORD')
 
 
     }
