@@ -84,8 +84,8 @@ DATABASES = {
         'NAME': 'stocks_products',
         'HOST': '127.0.0.1',
         'PORT': '5432',
-        'USER': 'dimon',
-        'PASSWORD': 'password'
+        'USER': 'postgres',
+        'PASSWORD': '89268563508'
 
     }
 }
