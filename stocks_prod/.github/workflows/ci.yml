@@ -55,7 +55,7 @@ jobs: #действие которые будут происходить
           ALLOWED_HOSTS: ${{ env.ALLOWED_HOSTS }}
           DB_NAME: ${{ env.DB_NAME }}
           DB_USER: ${{ env.DB_USER }}
-          DB_PASSWORD: ${{ env.DB_PASS }}
+          DB_PASSWORD: ${{ env.DB_PASSword }}
           DB_HOST: ${{ env.DB_HOST }}
           DB_PORT: ${{ env.DB_PORT }}
 
