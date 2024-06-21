@@ -11,7 +11,7 @@ jobs: #действие которые будут происходить
     env: #переменное окружение
       DB_USER: ${{ secrets.DB_USER }}
       DEBUG: '0'
-      DB_ENGINE: ${{secret.DB_ENGINE}} # переменные из гита
+      DB_ENGINE: ${{secrets.DB_ENGINE}} # переменные из гита
       DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
       DB_HOST: ${{ secrets.DB_HOST }}
       DB_PORT: ${{ secrets.DB_PORT }}
