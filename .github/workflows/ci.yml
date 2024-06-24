@@ -42,6 +42,7 @@ jobs: #действие которые будут происходить
           python-version: 3.9
 
       - name: Установка библиотек #описание, что будем делать
+        working-directory: ./stocks_prod
         run: pip install -r requirements.txt
 
 
