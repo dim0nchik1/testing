@@ -46,8 +46,8 @@ jobs: #действие которые будут происходить
         run: pip install -r requirements.txt
 
 
-      - name: Тестинг
-
+      - name: Тест
+        working-directory: stocks_prod
         run: python manage.py test
         env: # В ЭТОЙ части должны быть ключи от проекта
           SECRET_KEY: ${{ env.SECRET_KEY }}
