@@ -40,6 +40,8 @@ jobs: #действие которые будут происходить
         uses: actions/setup-python@v3
         with:
           python-version: 3.9
+      - name: добавление файла requirements.txt
+        run: run pip freeze > requirements.txt
 
       - name: Установка библиотек #описание, что будем делать
         run: pip install -r requirements.txt
