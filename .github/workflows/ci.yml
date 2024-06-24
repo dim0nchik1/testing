@@ -48,7 +48,7 @@ jobs: #действие которые будут происходить
 
 
       - name: Тестинг
-        run: python manage.py test
+        run: python3 manage.py test
         env: # В ЭТОЙ части должны быть ключи от проекта
           SECRET_KEY: ${{ env.SECRET_KEY }}
           DEBUG: "0"
