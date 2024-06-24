@@ -51,7 +51,7 @@ jobs: #действие которые будут происходить
         run: python manage.py test
         env: # В ЭТОЙ части должны быть ключи от проекта
           SECRET_KEY: ${{ env.SECRET_KEY }}
-          DEBUG: "0"
+          DEBUG: "1"
           ALLOWED_HOSTS: ${{ env.ALLOWED_HOSTS }}
           DB_NAME: ${{ env.DB_NAME }}
           DB_USER: ${{ env.DB_USER }}
