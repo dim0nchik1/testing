@@ -2,6 +2,7 @@ django
 djangorestframework
 psycopg2-binary
 django-filter
-rest-framewokews
+python-dotenv
+gunicorn
 flake8
 
