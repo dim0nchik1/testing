@@ -49,7 +49,7 @@ jobs: #действие которые будут происходить
       - name: Линтинг
         run: pip install flake8
       - name: залупа
-        run: flake 8
+        run: flake8
       - name: Тестинг
         run: python manage.py test
         env: # В ЭТОЙ части должны быть ключи от проекта
