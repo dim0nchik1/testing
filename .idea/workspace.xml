@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eae723f-dc51-4c65-b4ce-56f8dcb4b4c4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_prod/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/stocks_prod/.github/workflows/ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +45,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bmw\Desktop\testing\stocks_prod" />
       <recent name="C:\Users\bmw\Desktop\testing" />
+      <recent name="C:\Users\bmw\Desktop\testing\stocks_prod" />
       <recent name="C:\Users\bmw\Desktop\testing\stocks_prod\.github" />
     </key>
   </component>
