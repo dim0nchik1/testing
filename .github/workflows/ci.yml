@@ -46,8 +46,10 @@ jobs: #действие которые будут происходить
       - name: Установка библиотек #описание, что будем делать
         run: pip install -r requirements.txt
 
-      - name: Линтинг кода
-        run: flake8
+      - name: Линтинг
+        run: pip install flake8
+      - name: залупа
+        run: flake 8
       - name: Тестинг
         run: python manage.py test
         env: # В ЭТОЙ части должны быть ключи от проекта
