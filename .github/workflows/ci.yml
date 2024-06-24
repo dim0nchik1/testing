@@ -47,8 +47,8 @@ jobs: #действие которые будут происходить
 
 
       - name: Тестинг
-        working-directory: /home/runner/work/testing/stock_prod/
-        run: python3 manage.py test
+
+        run: python manage.py test
         env: # В ЭТОЙ части должны быть ключи от проекта
           SECRET_KEY: ${{ env.SECRET_KEY }}
           DEBUG: "0"
