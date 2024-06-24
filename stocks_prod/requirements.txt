@@ -3,4 +3,5 @@ djangorestframework
 psycopg2-binary
 django-filter
 rest-framewokews
+flake8
 
