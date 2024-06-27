@@ -30,5 +30,5 @@ class StockViewSet(ModelViewSet):
 
 
 def text_text(request):
-    return HttpResponse('или нет')
+    return HttpResponse('всем шалом')
 
