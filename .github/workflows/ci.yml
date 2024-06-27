@@ -1,0 +1,68 @@
+name: Django Testing and Deploy #название процесса
+
+#Указываем при каких условиях срабатывает workflow
+on: # запуск процесса и при каких условиях
+  push:  #пишем какие ветки нужно просматривать
+    branches: [cicd] #ветка
+
+jobs: #действие которые будут происходить
+  tests: #1 действие
+    runs-on: ubuntu-20.04 #указываем свою ос на которой запускаем
+    env: #переменное окружение
+      DB_USER: ${{ secrets.DB_USER }}
+      DEBUG: '0'
+      DB_ENGINE: ${{secrets.DB_ENGINE}} # переменные из гита
+      DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+      DB_HOST: ${{ secrets.DB_HOST }}
+      DB_PORT: ${{ secrets.DB_PORT }}
+      DB_NAME: ${{ secrets.DB_NAME }}
+      SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
+    services: #сервис postgres
+      postgres_main:
+        image: postgres:16 #версия postgres
+        env: #виртуальная среда для postgres
+          POSTGRES_USER: ${{ env.DB_USER }}
+          POSTGRES_PASSWORD: ${{ env.DB_PASSWORD }}
+          POSTGRES_DB: ${{ env.DB_NAME }}
+        ports: #открытие порта
+          - 5432:5432
+        options: #опции для работы с postgres
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+    steps: #  действия по проверке
+      - name: Проверяем репозиторий на наличие изменений #описание, что будем делать
+        uses: actions/checkout@v3
+
+      - name: Установка python #описание, что будем делать
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+
+      - name: Установка библиотек #описание, что будем делать
+        working-directory: ./stocks_prod
+        run: pip install -r requirements.txt
+
+
+      - name: Тест
+        working-directory: stocks_prod
+        run: python manage.py test
+        env: # В ЭТОЙ части должны быть ключи от проекта
+          SECRET_KEY: ${{ env.SECRET_KEY }}
+          DEBUG: "1"
+          ALLOWED_HOSTS: ${{ env.ALLOWED_HOSTS }}
+          DB_NAME: ${{ env.DB_NAME }}
+          DB_USER: ${{ env.DB_USER }}
+          DB_PASSWORD: ${{ env.DB_PASSword }}
+          DB_HOST: ${{ env.DB_HOST }}
+          DB_PORT: ${{ env.DB_PORT }}
+
+      - name: Деплой
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: expect /home/dimon/testing/pull.exp

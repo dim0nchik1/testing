@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eae723f-dc51-4c65-b4ce-56f8dcb4b4c4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/stocks_products/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/.idea/stocks_products.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/logistic/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/logistic/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/logistic/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/logistic/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/logistic/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/logistic/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/logistic/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/logistic/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/logistic/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/requests-examples.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/stocks_prod/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/stocks_prod/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/stocks_prod/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/stocks_prod/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks_products/stocks_prod/wsgi.py" beforeDir="false" />
+    <list default="true" id="4eae723f-dc51-4c65-b4ce-56f8dcb4b4c4" name="Changes" comment="&#10;+1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,13 +34,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test.TestSomething.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test.TestSomething.test_sample_view.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;cicd&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bmw\Desktop\testing" />
+      <recent name="C:\Users\bmw\Desktop\testing\stocks_prod" />
+      <recent name="C:\Users\bmw\Desktop\testing\stocks_prod\.github" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test.TestSomething">
+    <configuration name="Python tests for test.TestSomething" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="3.2-crud" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stocks_prod/logistic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestSomething&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.TestSomething.test_sample_view" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="3.2-crud" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stocks_prod/logistic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestSomething.test_sample_view&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test.TestSomething" />
+        <item itemvalue="Python tests.Python tests for test.TestSomething.test_sample_view" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
